@@ -1,0 +1,90 @@
+.page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f3f5f7;
+  color: #1f2933;
+}
+
+.reservation-panel,
+.reservation-list {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  margin: 0 0 20px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border: 1px solid #c7d0d9;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+button {
+  height: 44px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.empty-message {
+  padding: 20px;
+  border: 1px dashed #c7d0d9;
+  border-radius: 6px;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
